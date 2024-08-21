@@ -1,0 +1,8 @@
+version: '3.5'
+services:
+  textbook:
+    image: image-practice
+    container_name: photo-identify
+    volumes:
+      - ./:/root
+    tty: true

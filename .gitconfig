@@ -1,0 +1,14 @@
+[user]
+	name = tomosue-sho
+	email = tomotomosho1006@gmail.com
+[init]
+	defaultBranch = main
+[alias]
+	tree = log --graph --pretty=format:'%x09%C(auto) %h %Cgreen %ad %Creset%x09%C(cyan)%an%Creset %x09%C(auto)%s %d' --date=format-local:'%Y/%m/%d %H:%M:%S'
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[credential]
+	helper = "!f() { /root/.vscode-server/bin/eaa41d57266683296de7d118f574d0c2652e1fc4/node /tmp/vscode-remote-containers-ae0c6fb5-f92d-4784-a683-ee93c55fce49.js git-credential-helper $*; }; f"

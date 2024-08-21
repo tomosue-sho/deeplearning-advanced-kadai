@@ -1,0 +1,6 @@
+vgg16.h5
+.vscode-server/**
+**/__pycache__/**
+.dotnet
+.cache
+.ssh
